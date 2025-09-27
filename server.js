@@ -35,7 +35,7 @@ async function getDataWithAsync() {
   return info;
 }
 
-// ---------------- ROUTES ----------------
+//ROUTES 
 
 // test callback
 app.get("/callback", (req, res) => {
