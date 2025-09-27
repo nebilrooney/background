@@ -10,7 +10,7 @@ function wait(ms) {
   return new Promise((done) => setTimeout(done, ms));
 }
 
-// ===== CALLBACK STYLE =====
+//CALLBACK 
 function getDataWithCallback(cb) {
   setTimeout(() => {
     // some fake data
@@ -19,7 +19,7 @@ function getDataWithCallback(cb) {
   }, 1000);
 }
 
-// ===== PROMISE STYLE =====
+//PROMISE STYLE
 function getDataWithPromise() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -29,7 +29,7 @@ function getDataWithPromise() {
   });
 }
 
-// ===== ASYNC/AWAIT STYLE =====
+//ASYNC/AWAIT STYLE
 async function getDataWithAsync() {
   let info = await getDataWithPromise();
   return info;
